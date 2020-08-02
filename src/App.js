@@ -3,6 +3,13 @@ import './App.css';
 import {Form, Card, Image, Icon} from 'semantic-ui-react';
 
 function App() {
+
+  /*
+    Set all the const of what we need from the api.
+    We receive the call from the fetch and set it by "setXXX" to the useState.
+    Using Arrays with repos so we can .map() them later.
+    Setting the error to null as the first state to later control it
+  */
   const [name, setName] = useState('');
   const [userName, setUsername] = useState('');
   const [followers, setFollowers] = useState('');
@@ -14,6 +21,13 @@ function App() {
   const [search, setSearch] = useState('');  
   const [filteredRepos, setFilteredRepos]= useState([]);
     
+
+  /* 
+    Fetching the data from the github api.
+    We update the const above from it.
+    Creating an "empty" data.
+  */
+
   useEffect(() => {
      fetch('https://api.github.com/users/example')
      .then(res => res.json())
@@ -22,23 +36,29 @@ function App() {
      });
   }, [] );
 
+  /*
+    Filling the empty data with all the params received.
+    First, we set the params that we would like to receive and then update them.
+  */
+
   const setData = ({
     name,
     login,
     followers,
     following,
-    /*repos_url,*/
     avatar_url
   }) => {
      setName(name);
      setUsername(login);
      setFollowers(followers);
      setFollowing(following);
-     /*setRepos(repos_url); */
      setAvatar(avatar_url); 
   };
 
   
+  /*
+    While creating a form, we 
+  */
 
   const handleSearch =  (e) => {
     setUserInput(e.target.value)
@@ -83,7 +103,6 @@ function App() {
       
         <div class="row">
           <div class="column">
-           
           <div className="search">
       <Form onSubmit={handleSubmit }>
           <Form.Group>
@@ -121,15 +140,16 @@ function App() {
           </div>
 
       <div class="column">
-          <input className="repos-search" type="text" placeholder="Filter Repositories" onChange={ e => setSearch(e.target.value)}/>
-
+          <input className="repos-search" type="text"  placeholder="Filter Repositories" onChange={ e => setSearch(e.target.value)}/>
       <ul className="repo-list">
       {filteredRepos.map(repo => {
         return <li key={repo.id} className="repo-item">
         <a href={repo.html_url}>{repo.name}</a> 
         <p className="repo-description">{repo.description}</p>
-          <p className="repo-forks">Forks: {repo.forks}</p>
-          <p className="repo-language"> {repo.language}</p>
+      <p className="repo-language"> Language: {repo.language}   
+      <br/>
+      Forks: {repo.forks}</p>
+          <hr/>
         </li>
       })}
       </ul>
