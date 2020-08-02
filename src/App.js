@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Form, Card, Image, Icon} from 'semantic-ui-react';
-//7rss@cvb
 
 function App() {
   const [name, setName] = useState('');
