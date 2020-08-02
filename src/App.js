@@ -80,7 +80,7 @@ function App() {
 
   return (
     <div>
-      <div className="navbar">Github Search</div>
+      <div className="navbar">Github Repositories With Search Functionality</div>
       
         <div class="row">
           <div class="column">
@@ -122,18 +122,15 @@ function App() {
           </div>
 
       <div class="column">
-          <input className="repos-search" type="text" placeholder="Filter Repos" onChange={ e => setSearch(e.target.value)}/>
-
-
+          <input className="repos-search" type="text" placeholder="Filter Repositories" onChange={ e => setSearch(e.target.value)}/>
 
       <ul className="repo-list">
       {filteredRepos.map(repo => {
         return <li key={repo.id} className="repo-item">
         <a href={repo.html_url}>{repo.name}</a> 
         <p className="repo-description">{repo.description}</p>
-        <p className="repo-forks">Forks: {repo.forks}</p>
-        <p className="repo-language"> {repo.language}</p>
-        
+          <p className="repo-forks">Forks: {repo.forks}</p>
+          <p className="repo-language"> {repo.language}</p>
         </li>
       })}
       </ul>

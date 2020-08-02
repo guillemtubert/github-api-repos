@@ -1,6 +1,7 @@
 .navbar{
   padding: 10px;
   background-color: wheat;
+  text-align: center;
 }
 
 .search{
@@ -32,28 +33,30 @@
  /* CSS FOR THE REPOS */
 
  .repo-list{
-   border: 1px pink solid;
    align-items: center;
+   padding: 0;
  }
 
 .repo-item{
   border: 1px solid black;
-  padding: 1rem;
   margin: 0.5rem;
   list-style: none;
-  margin-left: 0.5rem;
+  padding: 0.5rem;
 }
 
 .repo-item a {
-  color: orange;
+  color: blue;
+  font-size: 1.5rem;
 }
 
 .repo-item a:hover {
-  color: lightpink;
+  font: bold;
+  text-decoration: underline;
 }
 
 .repo-description {
   color: rgb(95, 40, 147);
+  padding-top: 1rem;
 }
 
 .repo-forks{
