@@ -1,0 +1,17 @@
+ <Card.Content extra>
+            <a>
+              <Icon name='user' />
+              {repos} Repos
+            </a>
+          </Card.Content>
+
+
+
+<ul className="repo-list">
+        {repos.map(repo => {
+          return <li key={repo.id} className="repo-item">
+           <a href={repo.html_url} target="_blank">{repo.name}</a> 
+           <p>{repo.description}</p>
+          </li>
+        })}
+      </ul> 
