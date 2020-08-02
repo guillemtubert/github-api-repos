@@ -10,6 +10,7 @@ function App() {
     Using Arrays with repos so we can .map() them later.
     Setting the error to null as the first state to later control it
   */
+
   const [name, setName] = useState('');
   const [userName, setUsername] = useState('');
   const [followers, setFollowers] = useState('');
@@ -57,7 +58,7 @@ function App() {
 
   
   /*
-    While creating a form, we 
+    While creating a form, we set de (e)vent as the target's value.
   */
 
   const handleSearch =  (e) => {
@@ -86,7 +87,6 @@ function App() {
       setError(null)
     }
      });
-    
   }  
 
   useEffect(() => {
@@ -136,8 +136,7 @@ function App() {
         </Card>
         </div>
       ) }
-
-          </div>
+     </div>
 
       <div class="column">
           <input className="repos-search" type="text"  placeholder="Filter Repositories" onChange={ e => setSearch(e.target.value)}/>
@@ -153,13 +152,8 @@ function App() {
         </li>
       })}
       </ul>
-
           </div>
         </div>
-
-
-
-
     </div>
   );
 }
