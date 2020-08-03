@@ -144,7 +144,7 @@ const [filteredRepos, setFilteredRepos]= useState([]);
                   <hr/>
                 </li>
               })
-              };
+              }
               </ul>
         </div>
         
