@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/github-api-repos/static/css/main.cebfb138.chunk.css",
+    "main.js": "/github-api-repos/static/js/main.a4b9adfc.chunk.js",
+    "main.js.map": "/github-api-repos/static/js/main.a4b9adfc.chunk.js.map",
+    "runtime-main.js": "/github-api-repos/static/js/runtime-main.8d92aa94.js",
+    "runtime-main.js.map": "/github-api-repos/static/js/runtime-main.8d92aa94.js.map",
+    "static/css/2.b4675e99.chunk.css": "/github-api-repos/static/css/2.b4675e99.chunk.css",
+    "static/js/2.8d338118.chunk.js": "/github-api-repos/static/js/2.8d338118.chunk.js",
+    "static/js/2.8d338118.chunk.js.map": "/github-api-repos/static/js/2.8d338118.chunk.js.map",
+    "index.html": "/github-api-repos/index.html",
+    "precache-manifest.3cedb2ad36723507d6cf55b7b17e6573.js": "/github-api-repos/precache-manifest.3cedb2ad36723507d6cf55b7b17e6573.js",
+    "service-worker.js": "/github-api-repos/service-worker.js",
+    "static/css/2.b4675e99.chunk.css.map": "/github-api-repos/static/css/2.b4675e99.chunk.css.map",
+    "static/css/main.cebfb138.chunk.css.map": "/github-api-repos/static/css/main.cebfb138.chunk.css.map",
+    "static/js/2.8d338118.chunk.js.LICENSE.txt": "/github-api-repos/static/js/2.8d338118.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/github-api-repos/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d92aa94.js",
+    "static/css/2.b4675e99.chunk.css",
+    "static/js/2.8d338118.chunk.js",
+    "static/css/main.cebfb138.chunk.css",
+    "static/js/main.a4b9adfc.chunk.js"
+  ]
+}
