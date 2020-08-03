@@ -1,7 +1,7 @@
-## Available Scripts
-
 ### https://guillemtubert.github.io/github-api-repos/
+
+## Available Scripts
 
 npm start
 
-Guillem Tubert
+@GuillemTubert
